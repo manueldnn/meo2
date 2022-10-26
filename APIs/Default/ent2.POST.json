@@ -36,15 +36,6 @@
       "Validations": []
     },
     {
-      "Name": "datetime",
-      "IsDeleted": false,
-      "IsEnabled": true,
-      "OrderIndex": 2,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
-    },
-    {
       "Name": "date",
       "IsDeleted": false,
       "IsEnabled": true,
@@ -61,6 +52,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "currency",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -71,7 +71,7 @@
         "OutputToken": "CreatedRecordId",
         "name": "[name]",
         "email": "[email]",
-        "datetime": "[datetime]",
+        "currency": "[currency]",
         "date": "[date]",
         "boolean": "[boolean]"
       },
@@ -109,16 +109,16 @@
             "value": "[CreatedRecordId]"
           },
           {
+            "name": "currency",
+            "value": "[CreatedRecord:currency]"
+          },
+          {
             "name": "name",
             "value": "[CreatedRecord:name]"
           },
           {
             "name": "email",
             "value": "[CreatedRecord:email]"
-          },
-          {
-            "name": "datetime",
-            "value": "[CreatedRecord:datetime]"
           },
           {
             "name": "date",

@@ -54,16 +54,16 @@
             "value": "[RecordId]"
           },
           {
+            "name": "currency",
+            "value": "[Record:currency]"
+          },
+          {
             "name": "name",
             "value": "[Record:name]"
           },
           {
             "name": "email",
             "value": "[Record:email]"
-          },
-          {
-            "name": "datetime",
-            "value": "[Record:datetime]"
           },
           {
             "name": "date",

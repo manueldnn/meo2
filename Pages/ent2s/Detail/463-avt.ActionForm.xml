@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.23.10.00">
+<module type="ActionForm" version="05.23.11.00">
     <contentKey />
     <moduleID>463</moduleID>
     <alignment />
@@ -26,7 +26,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.23.10.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.23.11.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[689]]&gt;&lt;/Id&gt;
@@ -47,7 +47,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;static-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;entity-details-container\&quot;\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003ename:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:name=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container email\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003email_outline\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eemail:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e\r\n            \u003ca href=\&quot;mailto:[original:email=\u0027-\u0027]\&quot;\u003e[original:email=\u0027-\u0027]\u003c/a\u003e\r\n        \u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container datetime\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003etoday\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003edatetime:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[DateTime:Convert(Value=\&quot;[original:datetime:ISO]\&quot;, TimeZone=\&quot;UserTime\&quot;)=\u0027-\u0027|MM/dd/yyyy hh:mm tt]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container date\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003ecalendar_today\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003edate:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:date=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container boolean\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003echeck_circle_outline\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eboolean:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:boolean=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n\u003c/div\u003e&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;entity-details-container\&quot;\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003ename:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:name=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container email\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003email_outline\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eemail:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e\r\n            \u003ca href=\&quot;mailto:[original:email=\u0027-\u0027]\&quot;\u003e[original:email=\u0027-\u0027]\u003c/a\u003e\r\n        \u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container date\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003ecalendar_today\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003edate:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:date=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container boolean\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003echeck_circle_outline\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003eboolean:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:boolean=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\&quot;properties-container text\&quot;\u003e\r\n        \u003cdiv class=\&quot;entity-property\&quot;\u003e\r\n            \u003cspan class=\&quot;material-icons\&quot;\u003eshort_text\u003c/span\u003e\r\n            \u003cspan class=\&quot;entity-property-name\&quot;\u003ecurrency:\u003c/span\u003e\r\n        \u003c/div\u003e\r\n        \u003cdiv class=\&quot;entity-value\&quot;\u003e[original:currency=\u0027-\u0027]\u003c/div\u003e\r\n    \u003c/div\u003e\r\n\u003c/div\u003e&quot;}&lt;/InputData&gt;
       &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;entity-details-container&quot;&gt;
     &lt;div class=&quot;properties-container text&quot;&gt;
         &lt;div class=&quot;entity-property&quot;&gt;
@@ -65,13 +65,6 @@
             &lt;a href=&quot;mailto:[original:email=&#39;-&#39;]&quot;&gt;[original:email=&#39;-&#39;]&lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;properties-container datetime&quot;&gt;
-        &lt;div class=&quot;entity-property&quot;&gt;
-            &lt;span class=&quot;material-icons&quot;&gt;today&lt;/span&gt;
-            &lt;span class=&quot;entity-property-name&quot;&gt;datetime:&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;entity-value&quot;&gt;[DateTime:Convert(Value=&quot;[original:datetime:ISO]&quot;, TimeZone=&quot;UserTime&quot;)=&#39;-&#39;|MM/dd/yyyy hh:mm tt]&lt;/div&gt;
-    &lt;/div&gt;
     &lt;div class=&quot;properties-container date&quot;&gt;
         &lt;div class=&quot;entity-property&quot;&gt;
             &lt;span class=&quot;material-icons&quot;&gt;calendar_today&lt;/span&gt;
@@ -85,6 +78,13 @@
             &lt;span class=&quot;entity-property-name&quot;&gt;boolean:&lt;/span&gt;
         &lt;/div&gt;
         &lt;div class=&quot;entity-value&quot;&gt;[original:boolean=&#39;-&#39;]&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;properties-container text&quot;&gt;
+        &lt;div class=&quot;entity-property&quot;&gt;
+            &lt;span class=&quot;material-icons&quot;&gt;short_text&lt;/span&gt;
+            &lt;span class=&quot;entity-property-name&quot;&gt;currency:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;entity-value&quot;&gt;[original:currency=&#39;-&#39;]&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
@@ -110,7 +110,7 @@
     &lt;Title&gt;Details Form&lt;/Title&gt;
     &lt;CssName&gt;details-form&lt;/CssName&gt;
     &lt;Version&gt;5.23.0&lt;/Version&gt;
-    &lt;Build&gt;5.23.10&lt;/Build&gt;
+    &lt;Build&gt;5.23.11&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -127,7 +127,7 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;463&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.23.10&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.23.11&lt;/ModuleVersion&gt;
     &lt;TabId&gt;59&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
@@ -167,7 +167,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2022-10-26T12:19:46.87&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-10-26T12:22:52.11&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to view this item.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;463&lt;/ModuleId&gt;
@@ -182,9 +182,9 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2022-10-26T12:19:46.87&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-10-26T12:22:52.127&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:name&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:email&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:datetime&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:date&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:boolean&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:name&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:email&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:datetime&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:date&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:boolean&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:currency&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;463&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
@@ -196,7 +196,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.aa128e08-4d28-4a62-b699-bdd60ad0c178&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2022-10-26T12:19:46.887&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-10-26T12:22:52.127&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ent2Id=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;463&lt;/ModuleId&gt;
