@@ -1,0 +1,24 @@
+{
+  "id": 15,
+  "globalId": "41659ca3-5fb5-4cef-9f88-f4b4cabd5996",
+  "namespace": {
+    "id": 3,
+    "globalId": "e2622a9c-8073-4e56-b0ed-cbce725e8e1d",
+    "portalId": 0,
+    "name": "Tickets",
+    "isSystem": false
+  },
+  "name": "byId",
+  "description": "Pass in a ticket Id to return the value of one of the properties of the entry. ",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "0",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT * FROM [app].[Ticket] WHERE [Id] = '[TknParams:Id]'",
+    "defaultColumn": "Subject",
+    "columns": "CreatedBy\nCreatedDate\nDetails\nEmail\nFirstName\nLastModifiedBy\nLastModifiedDate\nLastName\nPhone\nSubject\nStatus\nSupportAgent",
+    "connectionString": "",
+    "type": "db"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": 12,
+  "globalId": "eb99cc28-b68a-48fa-8447-fc5aa617d333",
+  "namespace": {
+    "id": 1,
+    "globalId": "e837dbb0-a4b7-4b90-ba34-0ea42715edc2",
+    "name": "PAASysUpdates",
+    "description": "",
+    "isSystem": true
+  },
+  "name": "CurrentDNNVersion",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT TOP 1 CONCAT(Major, '.', Minor, '.', Build) AS CurrentVersion\r\nFROM dbo.[Version]\r\nORDER BY VersionId DESC",
+    "defaultColumn": "CurrentVersion",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

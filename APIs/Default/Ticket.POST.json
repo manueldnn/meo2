@@ -1,0 +1,176 @@
+{
+  "Name": "Ticket",
+  "Description": "Creates a new record of type Ticket",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 21,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Input": [
+    {
+      "Name": "Subject",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Details",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "FirstName",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "LastName",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Email",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Phone",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Status",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "SupportAgent",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.69e2f7f9-9318-4f99-b4be-57f0b6c672c3",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "Subject": "[Subject]",
+        "Details": "[Details]",
+        "FirstName": "[FirstName]",
+        "LastName": "[LastName]",
+        "Email": "[Email]",
+        "Phone": "[Phone]",
+        "Status": "[Status]",
+        "SupportAgent": "[SupportAgent]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "69e2f7f9-9318-4f99-b4be-57f0b6c672c3"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.69e2f7f9-9318-4f99-b4be-57f0b6c672c3",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "69e2f7f9-9318-4f99-b4be-57f0b6c672c3"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "Subject",
+            "value": "[CreatedRecord:Subject]"
+          },
+          {
+            "name": "Details",
+            "value": "[CreatedRecord:Details]"
+          },
+          {
+            "name": "FirstName",
+            "value": "[CreatedRecord:FirstName]"
+          },
+          {
+            "name": "LastName",
+            "value": "[CreatedRecord:LastName]"
+          },
+          {
+            "name": "Email",
+            "value": "[CreatedRecord:Email]"
+          },
+          {
+            "name": "Phone",
+            "value": "[CreatedRecord:Phone]"
+          },
+          {
+            "name": "Status",
+            "value": "[CreatedRecord:Status]"
+          },
+          {
+            "name": "SupportAgent",
+            "value": "[CreatedRecord:SupportAgent]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://plantanapp-incidentmanagementtemplate.apps.plantanapp.com/api/Ticket?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

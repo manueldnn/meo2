@@ -1,0 +1,35 @@
+{
+  "ApiId": "8547429be189dc322b9981",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Notify Support Agents of a new ticket",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "OnDbInsert",
+      "Parameters": {
+        "TableName": {
+          "Expression": "",
+          "Value": "app.Ticket",
+          "IsExpression": false,
+          "Parameters": {}
+        }
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ExecuteWorkflow.395fdc33a84b4b11a4c0aa99c8e3eac5",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {
+        "InputHelpText": "",
+        "Subject": "[Subject]",
+        "Details": "[Details]"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
