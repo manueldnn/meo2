@@ -39,7 +39,7 @@
       "Name": "date",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 3,
+      "OrderIndex": 2,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -48,7 +48,7 @@
       "Name": "boolean",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 4,
+      "OrderIndex": 3,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -57,7 +57,7 @@
       "Name": "currency",
       "IsDeleted": false,
       "IsEnabled": false,
-      "OrderIndex": 5,
+      "OrderIndex": 4,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -109,10 +109,6 @@
             "value": "[CreatedRecordId]"
           },
           {
-            "name": "currency",
-            "value": "[CreatedRecord:currency]"
-          },
-          {
             "name": "name",
             "value": "[CreatedRecord:name]"
           },
@@ -127,6 +123,10 @@
           {
             "name": "boolean",
             "value": "[CreatedRecord:boolean]"
+          },
+          {
+            "name": "currency",
+            "value": "[CreatedRecord:currency]"
           }
         ],
         "Headers": [

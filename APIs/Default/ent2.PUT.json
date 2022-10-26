@@ -59,7 +59,7 @@
       "Name": "date",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 4,
+      "OrderIndex": 3,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -68,7 +68,7 @@
       "Name": "boolean",
       "IsDeleted": false,
       "IsEnabled": true,
-      "OrderIndex": 5,
+      "OrderIndex": 4,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
@@ -77,7 +77,7 @@
       "Name": "currency",
       "IsDeleted": false,
       "IsEnabled": false,
-      "OrderIndex": 6,
+      "OrderIndex": 5,
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
