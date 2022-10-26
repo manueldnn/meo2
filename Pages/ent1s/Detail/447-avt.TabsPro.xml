@@ -71,7 +71,7 @@
       &lt;IconUrl /&gt;
       &lt;IconClass /&gt;
       &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;3&lt;/ViewOrder&gt;
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;True&lt;/DefaultTab&gt;
@@ -81,6 +81,12 @@
         &lt;en-US&gt;Details&lt;/en-US&gt;
       &lt;/Localization&gt;
       &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;446&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
         &lt;Module&gt;
           &lt;ModuleId&gt;446&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;
@@ -99,7 +105,7 @@
       &lt;IconUrl /&gt;
       &lt;IconClass /&gt;
       &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
-      &lt;ViewOrder&gt;1&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;4&lt;/ViewOrder&gt;
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
@@ -109,6 +115,12 @@
         &lt;en-US&gt;docs&lt;/en-US&gt;
       &lt;/Localization&gt;
       &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;448&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;docs List&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;4&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
         &lt;Module&gt;
           &lt;ModuleId&gt;448&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;docs List&lt;/ModuleTitle&gt;
@@ -127,7 +139,7 @@
       &lt;IconUrl /&gt;
       &lt;IconClass /&gt;
       &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
-      &lt;ViewOrder&gt;2&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;5&lt;/ViewOrder&gt;
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;False&lt;/DefaultTab&gt;
@@ -137,6 +149,12 @@
         &lt;en-US&gt;list of tickets&lt;/en-US&gt;
       &lt;/Localization&gt;
       &lt;Modules&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;450&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;list of tickets List&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;6&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
         &lt;Module&gt;
           &lt;ModuleId&gt;450&lt;/ModuleId&gt;
           &lt;ModuleTitle&gt;list of tickets List&lt;/ModuleTitle&gt;

@@ -36,15 +36,6 @@
       "Validations": []
     },
     {
-      "Name": "date",
-      "IsDeleted": false,
-      "IsEnabled": true,
-      "OrderIndex": 2,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
-    },
-    {
       "Name": "doc",
       "IsDeleted": false,
       "IsEnabled": true,
@@ -83,6 +74,15 @@
           }
         }
       ]
+    },
+    {
+      "Name": "boolean",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -93,7 +93,7 @@
         "OutputToken": "CreatedRecordId",
         "name": "[name]",
         "email": "[email]",
-        "date": "[date]",
+        "boolean": "[boolean]",
         "doc": "[doc]",
         "refoftickets": "[refoftickets]"
       },
@@ -131,16 +131,16 @@
             "value": "[CreatedRecordId]"
           },
           {
+            "name": "boolean",
+            "value": "[CreatedRecord:boolean]"
+          },
+          {
             "name": "name",
             "value": "[CreatedRecord:name]"
           },
           {
             "name": "email",
             "value": "[CreatedRecord:email]"
-          },
-          {
-            "name": "date",
-            "value": "[CreatedRecord:date]"
           },
           {
             "name": "doc",

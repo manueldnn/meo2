@@ -56,15 +56,6 @@
       "Validations": []
     },
     {
-      "Name": "date",
-      "IsDeleted": false,
-      "IsEnabled": true,
-      "OrderIndex": 3,
-      "Parameters": {},
-      "InputTypeStr": "text",
-      "Validations": []
-    },
-    {
       "Name": "doc",
       "IsDeleted": false,
       "IsEnabled": true,
@@ -103,6 +94,15 @@
           }
         }
       ]
+    },
+    {
+      "Name": "boolean",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -113,7 +113,7 @@
         "RecordId": "[RecordId]",
         "name": "[name]",
         "email": "[email]",
-        "date": "[date]",
+        "boolean": "[boolean]",
         "doc": "[doc]",
         "refoftickets": "[refoftickets]"
       },
