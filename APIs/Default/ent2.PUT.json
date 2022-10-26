@@ -1,9 +1,9 @@
 {
-  "Name": "ent1",
-  "Description": "Updates the information of the provided ent1 record",
+  "Name": "ent2",
+  "Description": "Updates the information of the provided ent2 record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 29,
+  "OrderIndex": 34,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Input": [
     {
@@ -56,49 +56,27 @@
       "Validations": []
     },
     {
-      "Name": "doc",
+      "Name": "datetime",
       "IsDeleted": false,
       "IsEnabled": true,
       "OrderIndex": 3,
       "Parameters": {},
       "InputTypeStr": "text",
-      "Validations": [
-        {
-          "Data": "{\"Message\":\"doc is required.\"}",
-          "Type": "default-required",
-          "IsDeleted": false,
-          "IsEnabled": false,
-          "OrderIndex": 0,
-          "Metadata": {
-            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
-          }
-        }
-      ]
+      "Validations": []
     },
     {
-      "Name": "refoftickets",
+      "Name": "date",
       "IsDeleted": false,
       "IsEnabled": true,
       "OrderIndex": 4,
       "Parameters": {},
       "InputTypeStr": "text",
-      "Validations": [
-        {
-          "Data": "{\"Message\":\"refoftickets is required.\"}",
-          "Type": "default-required",
-          "IsDeleted": false,
-          "IsEnabled": false,
-          "OrderIndex": 0,
-          "Metadata": {
-            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
-          }
-        }
-      ]
+      "Validations": []
     },
     {
       "Name": "boolean",
       "IsDeleted": false,
-      "IsEnabled": false,
+      "IsEnabled": true,
       "OrderIndex": 5,
       "Parameters": {},
       "InputTypeStr": "text",
@@ -107,21 +85,21 @@
   ],
   "Actions": [
     {
-      "ActionType": "PlantAnApp.UpdateEntity.3d895e31-eb28-409e-b09e-2af8e382729d",
+      "ActionType": "PlantAnApp.UpdateEntity.aa128e08-4d28-4a62-b699-bdd60ad0c178",
       "OrderIndex": 0,
       "Parameters": {
         "RecordId": "[RecordId]",
         "name": "[name]",
         "email": "[email]",
-        "boolean": "[boolean]",
-        "doc": "[doc]",
-        "refoftickets": "[refoftickets]"
+        "datetime": "[datetime]",
+        "date": "[date]",
+        "boolean": "[boolean]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
       "Metadata": {
         "PAP_InternalIdentifier": "Api.UpdateEntity",
-        "EntityIdentifier": "3d895e31-eb28-409e-b09e-2af8e382729d",
+        "EntityIdentifier": "aa128e08-4d28-4a62-b699-bdd60ad0c178",
         "IsUidEnabled": "True"
       }
     },

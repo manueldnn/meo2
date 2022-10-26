@@ -1,9 +1,9 @@
 {
-  "Name": "ent1",
-  "Description": "Returns the information of a ent1 record in JSON object format.",
-  "HttpMethod": "GET",
+  "Name": "ent2",
+  "Description": "Deletes the provided ent2 record",
+  "HttpMethod": "DELETE",
   "IsEnabled": true,
-  "OrderIndex": 27,
+  "OrderIndex": 35,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Input": [
     {
@@ -29,17 +29,16 @@
   ],
   "Actions": [
     {
-      "ActionType": "PlantAnApp.ReadEntity.3d895e31-eb28-409e-b09e-2af8e382729d",
+      "ActionType": "PlantAnApp.DeleteEntity.aa128e08-4d28-4a62-b699-bdd60ad0c178",
       "OrderIndex": 0,
       "Parameters": {
-        "RecordId": "[RecordId]",
-        "OutputToken": "Record"
+        "RecordId": "[RecordId]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
       "Metadata": {
-        "PAP_InternalIdentifier": "Api.ReadEntity",
-        "EntityIdentifier": "3d895e31-eb28-409e-b09e-2af8e382729d",
+        "PAP_InternalIdentifier": "Api.DeleteEntity",
+        "EntityIdentifier": "aa128e08-4d28-4a62-b699-bdd60ad0c178",
         "IsUidEnabled": "True"
       }
     },
@@ -48,32 +47,7 @@
       "OrderIndex": 1,
       "Parameters": {
         "HttpCode": "200 OK",
-        "Fields": [
-          {
-            "name": "Id",
-            "value": "[RecordId]"
-          },
-          {
-            "name": "name",
-            "value": "[Record:name]"
-          },
-          {
-            "name": "email",
-            "value": "[Record:email]"
-          },
-          {
-            "name": "doc",
-            "value": "[Record:doc]"
-          },
-          {
-            "name": "refoftickets",
-            "value": "[Record:refoftickets]"
-          },
-          {
-            "name": "boolean",
-            "value": "[Record:boolean]"
-          }
-        ],
+        "Fields": [],
         "Headers": []
       },
       "IsEnabled": true,

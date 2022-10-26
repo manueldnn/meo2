@@ -1,9 +1,9 @@
 {
-  "Name": "ent1",
-  "Description": "Returns the information of a ent1 record in JSON object format.",
+  "Name": "ent2",
+  "Description": "Returns the information of a ent2 record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 27,
+  "OrderIndex": 32,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Input": [
     {
@@ -29,7 +29,7 @@
   ],
   "Actions": [
     {
-      "ActionType": "PlantAnApp.ReadEntity.3d895e31-eb28-409e-b09e-2af8e382729d",
+      "ActionType": "PlantAnApp.ReadEntity.aa128e08-4d28-4a62-b699-bdd60ad0c178",
       "OrderIndex": 0,
       "Parameters": {
         "RecordId": "[RecordId]",
@@ -39,7 +39,7 @@
       "ExecutionType": "OnExecute",
       "Metadata": {
         "PAP_InternalIdentifier": "Api.ReadEntity",
-        "EntityIdentifier": "3d895e31-eb28-409e-b09e-2af8e382729d",
+        "EntityIdentifier": "aa128e08-4d28-4a62-b699-bdd60ad0c178",
         "IsUidEnabled": "True"
       }
     },
@@ -62,12 +62,12 @@
             "value": "[Record:email]"
           },
           {
-            "name": "doc",
-            "value": "[Record:doc]"
+            "name": "datetime",
+            "value": "[Record:datetime]"
           },
           {
-            "name": "refoftickets",
-            "value": "[Record:refoftickets]"
+            "name": "date",
+            "value": "[Record:date]"
           },
           {
             "name": "boolean",

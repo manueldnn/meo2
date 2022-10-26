@@ -1,9 +1,9 @@
 {
-  "Name": "ent1",
-  "Description": "Creates a new record of type ent1",
+  "Name": "ent2",
+  "Description": "Creates a new record of type ent2",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 26,
+  "OrderIndex": 31,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Input": [
     {
@@ -36,49 +36,27 @@
       "Validations": []
     },
     {
-      "Name": "doc",
+      "Name": "datetime",
       "IsDeleted": false,
       "IsEnabled": true,
       "OrderIndex": 2,
       "Parameters": {},
       "InputTypeStr": "text",
-      "Validations": [
-        {
-          "Data": "{\"Message\":\"doc is required.\"}",
-          "Type": "default-required",
-          "IsDeleted": false,
-          "IsEnabled": false,
-          "OrderIndex": 0,
-          "Metadata": {
-            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
-          }
-        }
-      ]
+      "Validations": []
     },
     {
-      "Name": "refoftickets",
+      "Name": "date",
       "IsDeleted": false,
       "IsEnabled": true,
       "OrderIndex": 3,
       "Parameters": {},
       "InputTypeStr": "text",
-      "Validations": [
-        {
-          "Data": "{\"Message\":\"refoftickets is required.\"}",
-          "Type": "default-required",
-          "IsDeleted": false,
-          "IsEnabled": false,
-          "OrderIndex": 0,
-          "Metadata": {
-            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
-          }
-        }
-      ]
+      "Validations": []
     },
     {
       "Name": "boolean",
       "IsDeleted": false,
-      "IsEnabled": false,
+      "IsEnabled": true,
       "OrderIndex": 4,
       "Parameters": {},
       "InputTypeStr": "text",
@@ -87,26 +65,26 @@
   ],
   "Actions": [
     {
-      "ActionType": "PlantAnApp.CreateEntity.3d895e31-eb28-409e-b09e-2af8e382729d",
+      "ActionType": "PlantAnApp.CreateEntity.aa128e08-4d28-4a62-b699-bdd60ad0c178",
       "OrderIndex": 0,
       "Parameters": {
         "OutputToken": "CreatedRecordId",
         "name": "[name]",
         "email": "[email]",
-        "boolean": "[boolean]",
-        "doc": "[doc]",
-        "refoftickets": "[refoftickets]"
+        "datetime": "[datetime]",
+        "date": "[date]",
+        "boolean": "[boolean]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
       "Metadata": {
         "PAP_InternalIdentifier": "Api.CreateEntity",
-        "EntityIdentifier": "3d895e31-eb28-409e-b09e-2af8e382729d",
+        "EntityIdentifier": "aa128e08-4d28-4a62-b699-bdd60ad0c178",
         "IsUidEnabled": "True"
       }
     },
     {
-      "ActionType": "PlantAnApp.ReadEntity.3d895e31-eb28-409e-b09e-2af8e382729d",
+      "ActionType": "PlantAnApp.ReadEntity.aa128e08-4d28-4a62-b699-bdd60ad0c178",
       "OrderIndex": 1,
       "Parameters": {
         "RecordId": "[CreatedRecordId]",
@@ -116,7 +94,7 @@
       "ExecutionType": "OnExecute",
       "Metadata": {
         "PAP_InternalIdentifier": "Api.ReadEntity",
-        "EntityIdentifier": "3d895e31-eb28-409e-b09e-2af8e382729d",
+        "EntityIdentifier": "aa128e08-4d28-4a62-b699-bdd60ad0c178",
         "IsUidEnabled": "True"
       }
     },
@@ -139,12 +117,12 @@
             "value": "[CreatedRecord:email]"
           },
           {
-            "name": "doc",
-            "value": "[CreatedRecord:doc]"
+            "name": "datetime",
+            "value": "[CreatedRecord:datetime]"
           },
           {
-            "name": "refoftickets",
-            "value": "[CreatedRecord:refoftickets]"
+            "name": "date",
+            "value": "[CreatedRecord:date]"
           },
           {
             "name": "boolean",
@@ -154,7 +132,7 @@
         "Headers": [
           {
             "name": "Location",
-            "value": "http://release-123meo2.apps.plantanapp.com/api/ent1?recordId=[CreatedRecordId]"
+            "value": "http://release-123meo2.apps.plantanapp.com/api/ent2?recordId=[CreatedRecordId]"
           }
         ]
       },

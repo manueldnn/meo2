@@ -1,6 +1,6 @@
 <module type="ActionForm" version="05.23.10.00">
     <contentKey />
-    <moduleID>445</moduleID>
+    <moduleID>462</moduleID>
     <alignment />
     <alltabs>false</alltabs>
     <border />
@@ -19,7 +19,7 @@
     <modulepermissions />
     <title>Header Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
-    <uniqueId>a64ec036-eb78-4f63-8f78-11127e494154</uniqueId>
+    <uniqueId>ce36abd2-bbea-4f3b-a342-4a56e7ddc3d6</uniqueId>
     <visibility>Maximized</visibility>
     <cultureCode />
     <modulesettings />
@@ -29,7 +29,7 @@
     <content type="ActionForm" version="05.23.10.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
-      &lt;Id&gt;&lt;![CDATA[640]]&gt;&lt;/Id&gt;
+      &lt;Id&gt;&lt;![CDATA[686]]&gt;&lt;/Id&gt;
       &lt;Title&gt;&lt;![CDATA[]]&gt;&lt;/Title&gt;
       &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
       &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
@@ -74,7 +74,7 @@
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
     &lt;Field&gt;
-      &lt;Id&gt;&lt;![CDATA[641]]&gt;&lt;/Id&gt;
+      &lt;Id&gt;&lt;![CDATA[687]]&gt;&lt;/Id&gt;
       &lt;Title&gt;&lt;![CDATA[]]&gt;&lt;/Title&gt;
       &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
       &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
@@ -125,7 +125,7 @@
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
     &lt;Field&gt;
-      &lt;Id&gt;&lt;![CDATA[642]]&gt;&lt;/Id&gt;
+      &lt;Id&gt;&lt;![CDATA[688]]&gt;&lt;/Id&gt;
       &lt;Title&gt;&lt;![CDATA[Edit]]&gt;&lt;/Title&gt;
       &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
       &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
@@ -134,7 +134,7 @@
       &lt;OverrideName&gt;Edit&lt;/OverrideName&gt;
       &lt;Name&gt;Edit&lt;/Name&gt;
       &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
-      &lt;ShowCondition&gt;&lt;![CDATA[[HasRole:Admins] || [HasRole:CitizenDevelopers] || [HasRole:Low-CodeEngineer] || [HasRole:Managers] || [HasRole:Users]]]&gt;&lt;/ShowCondition&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[[HasRole:Admins] || [HasRole:CitizenDevelopers] || [HasRole:Low-CodeEngineer] || [HasRole:Managers]]]&gt;&lt;/ShowCondition&gt;
       &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
       &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
       &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
@@ -212,14 +212,14 @@
     &lt;LabelWidth&gt;3&lt;/LabelWidth&gt;
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
-    &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+    &lt;ModuleId&gt;462&lt;/ModuleId&gt;
     &lt;ModuleVersion&gt;5.23.10&lt;/ModuleVersion&gt;
-    &lt;TabId&gt;56&lt;/TabId&gt;
+    &lt;TabId&gt;59&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
     &lt;FormTemplate&gt;bootstrap5&lt;/FormTemplate&gt;
     &lt;FormTemplateFolder&gt;/DesktopModules/DnnSharp/ActionForm/templates/Form/bootstrap5&lt;/FormTemplateFolder&gt;
-    &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+    &lt;ModuleId&gt;462&lt;/ModuleId&gt;
     &lt;IsDebug&gt;False&lt;/IsDebug&gt;
     &lt;EnableReports&gt;False&lt;/EnableReports&gt;
     &lt;ClientSideValidation&gt;True&lt;/ClientSideValidation&gt;
@@ -241,7 +241,7 @@
     &lt;TextColor /&gt;
     &lt;Padding&gt;0&lt;/Padding&gt;
     &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
-    &lt;BaseId&gt;dnn445&lt;/BaseId&gt;
+    &lt;BaseId&gt;dnn462&lt;/BaseId&gt;
     &lt;PopupName /&gt;
     &lt;RootClasses&gt;header-form-root&lt;/RootClasses&gt;
     &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
@@ -252,27 +252,27 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2022-10-26T10:39:46.117&lt;/LastModified&gt;
+      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
+      &lt;LastModified&gt;2022-10-26T12:19:46.73&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;ModuleId&gt;462&lt;/ModuleId&gt;
       &lt;FieldName&gt;Edit&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
+        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/PAP_GeneratedCondition&gt;
       &lt;/Metadata&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2022-10-26T10:39:46.147&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-10-26T12:19:46.743&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:name&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:email&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:doc&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:refoftickets&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:boolean&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:name&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:email&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:datetime&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:date&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:boolean&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;462&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.InitializeVariablesWithDefaultValues&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
@@ -283,10 +283,10 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;OpenAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2022-10-26T10:39:46.133&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-10-26T12:19:46.743&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;ReinitForm&quot;:true,&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;48ecc2f8-3a61-488c-966a-312e0b3289ba&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[{&quot;name&quot;:&quot;detailPage&quot;,&quot;value&quot;:&quot;true&quot;}]}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;ActionData&gt;{&quot;ReinitForm&quot;:true,&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;9e7b8463-8ba4-4423-86be-54691fdbd8d9&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[{&quot;name&quot;:&quot;detailPage&quot;,&quot;value&quot;:&quot;true&quot;}]}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;462&lt;/ModuleId&gt;
       &lt;FieldName&gt;Edit&lt;/FieldName&gt;
       &lt;EventName&gt;click&lt;/EventName&gt;
       &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Edit.OpenActionFormPopup&quot;}&lt;/MetadataJson&gt;
@@ -296,69 +296,18 @@
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;PlantAnApp.ReadEntity.3d895e31-eb28-409e-b09e-2af8e382729d&lt;/ActionType&gt;
+      &lt;ActionType&gt;PlantAnApp.ReadEntity.aa128e08-4d28-4a62-b699-bdd60ad0c178&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2022-10-26T10:39:46.147&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-10-26T12:19:46.743&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ent1Id=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
+      &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ent2Id=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;462&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.LoadVariablesValues&quot;,&quot;EntityIdentifier&quot;:&quot;3d895e31-eb28-409e-b09e-2af8e382729d&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.LoadVariablesValues&quot;,&quot;EntityIdentifier&quot;:&quot;aa128e08-4d28-4a62-b699-bdd60ad0c178&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.LoadVariablesValues&lt;/PAP_InternalIdentifier&gt;
-        &lt;EntityIdentifier&gt;3d895e31-eb28-409e-b09e-2af8e382729d&lt;/EntityIdentifier&gt;
+        &lt;EntityIdentifier&gt;aa128e08-4d28-4a62-b699-bdd60ad0c178&lt;/EntityIdentifier&gt;
         &lt;IsUidEnabled&gt;True&lt;/IsUidEnabled&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2022-10-26T10:39:46.133&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Edit&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2022-10-26T10:39:46.133&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Edit&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
-      &lt;/Metadata&gt;
-    &lt;/ActionInfo&gt;
-    &lt;ActionInfo&gt;
-      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
-      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
-      &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2022-10-26T10:39:46.133&lt;/LastModified&gt;
-      &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
-      &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
-      &lt;ModuleId&gt;445&lt;/ModuleId&gt;
-      &lt;FieldName&gt;Edit&lt;/FieldName&gt;
-      &lt;EventName&gt;click&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Action.CheckEditPermissions&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&quot;}&lt;/MetadataJson&gt;
-      &lt;Metadata&gt;
-        &lt;PAP_InternalIdentifier&gt;Action.CheckEditPermissions&lt;/PAP_InternalIdentifier&gt;
-        &lt;PAP_GeneratedCondition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/PAP_GeneratedCondition&gt;
       &lt;/Metadata&gt;
     &lt;/ActionInfo&gt;
   &lt;/Actions&gt;
