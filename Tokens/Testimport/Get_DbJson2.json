@@ -1,0 +1,23 @@
+{
+  "id": 16,
+  "globalId": "a9bd3923-cb06-4a29-bf21-9d02029741b3",
+  "namespace": {
+    "id": 4,
+    "globalId": "943e1eb6-08bf-4dc9-a192-5fcf857a0a18",
+    "name": "Testimport",
+    "isSystem": false
+  },
+  "name": "Get_DbJson2",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT '[{\"test\": 123}, {\"test\": \"def\"}]' as value",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

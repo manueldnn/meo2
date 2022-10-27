@@ -1,0 +1,23 @@
+{
+  "id": 17,
+  "globalId": "521feab9-25f9-4971-89b0-1194b4c111e1",
+  "namespace": {
+    "id": 4,
+    "globalId": "943e1eb6-08bf-4dc9-a192-5fcf857a0a18",
+    "name": "Testimport",
+    "isSystem": false
+  },
+  "name": "Parse_Db_Json_2",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "language": "csharp",
+    "compiledRazorLocation": "host",
+    "additionalAssemblies": "~/bin/Newtonsoft.Json.dll",
+    "debug": false,
+    "type": "razor"
+  }
+}
