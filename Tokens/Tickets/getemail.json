@@ -1,0 +1,24 @@
+{
+  "id": 18,
+  "globalId": "4e6a4667-1d5f-44a4-904a-71b2c407fa6e",
+  "namespace": {
+    "id": 3,
+    "globalId": "e2622a9c-8073-4e56-b0ed-cbce725e8e1d",
+    "portalId": 0,
+    "name": "Tickets",
+    "isSystem": false
+  },
+  "name": "getemail",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "select * from users\nwhere Userid = [TknParams:Userid]",
+    "defaultColumn": "email",
+    "columns": "firstname\nlastname",
+    "connectionString": "",
+    "type": "db"
+  }
+}

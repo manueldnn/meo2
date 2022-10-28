@@ -1,0 +1,329 @@
+{
+  "InputFields": [
+    {
+      "Id": 32,
+      "Name": "Payload",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "LargeText",
+      "EntityVersionId": null,
+      "WorkflowId": 7,
+      "IsDeleted": false,
+      "Required": true
+    },
+    {
+      "Id": 33,
+      "Name": "FileName",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 7,
+      "IsDeleted": false,
+      "Required": false
+    }
+  ],
+  "OutputFields": [
+    {
+      "Id": 34,
+      "Name": "Result",
+      "DefaultValue": "[Result=Success]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 7,
+      "IsDeleted": false,
+      "Required": false
+    },
+    {
+      "Id": 35,
+      "Name": "LinkClickUrl",
+      "DefaultValue": "[LinkClickUrl]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 7,
+      "IsDeleted": false,
+      "Required": false
+    },
+    {
+      "Id": 36,
+      "Name": "AbsoluteURL",
+      "DefaultValue": "[AbsoluteURL]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 7,
+      "IsDeleted": false,
+      "Required": false
+    },
+    {
+      "Id": 37,
+      "Name": "FileID",
+      "DefaultValue": "[FileID=0]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 7,
+      "IsDeleted": false,
+      "Required": false
+    }
+  ],
+  "Id": 7,
+  "GlobalId": "ccc6d3f4-31d1-4b5b-b497-bcc035978a8e",
+  "ConfigGenerationGlobalId": "ccc6d3f4-31d1-4b5b-b497-bcc035978a8e",
+  "EnvironmentId": 1,
+  "Name": "Generate PDF",
+  "Description": "Creates a PDF and returns the path to the file",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 20,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 27,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "GeneratePDF",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 125,
+            "Name": "HtmlInputType",
+            "Value": "richtext",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 126,
+            "Name": "HTMLCode",
+            "Value": "<p>[Payload]</p>",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 127,
+            "Name": "PDFName",
+            "Value": "[FileName=[GUID:NewCompact]]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 128,
+            "Name": "PathDestination",
+            "Value": "/PDF",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 129,
+            "Name": "OrientationLandscape",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 130,
+            "Name": "PaperSize",
+            "Value": "A4",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 131,
+            "Name": "Grayscale",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 132,
+            "Name": "OtherOptions",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 133,
+            "Name": "StoreFileId",
+            "Value": "FileID",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 134,
+            "Name": "StoreAbsoluteURL",
+            "Value": "AbsoluteURL",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 135,
+            "Name": "StoreRelativeURL",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 136,
+            "Name": "StorePhysicalPath",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 137,
+            "Name": "StoreLinkClick",
+            "Value": "LinkClickUrl",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 138,
+            "Name": "ForceDownload",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 27,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0jhiswb"
+      },
+      {
+        "Id": 28,
+        "Description": "",
+        "ActionErrorMessage": "",
+        "Condition": "",
+        "ActionType": "PlantAnApp.ExecuteConditionally",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 139,
+            "Name": "ConditionedActions",
+            "Value": [
+              {
+                "Condition": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "[FileID=0]!=0"
+                },
+                "Actions": {
+                  "Id": 21,
+                  "EventName": "click",
+                  "Actions": [
+                    {
+                      "Id": 29,
+                      "Description": null,
+                      "ActionErrorMessage": null,
+                      "Condition": null,
+                      "ActionType": "InjectData",
+                      "OrderIndex": 0,
+                      "ActionParameters": [
+                        {
+                          "Id": 141,
+                          "Name": "Data",
+                          "Value": [
+                            {
+                              "value": "Success",
+                              "name": "Result"
+                            }
+                          ],
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 29,
+                          "OrderIndex": 0
+                        }
+                      ],
+                      "DiagramUID": "Activity_1dd1etd"
+                    }
+                  ],
+                  "IsInvalid": false
+                }
+              },
+              {
+                "Condition": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "[FileID=0]==0"
+                },
+                "Actions": {
+                  "Id": 22,
+                  "EventName": "click",
+                  "Actions": [
+                    {
+                      "Id": 30,
+                      "Description": null,
+                      "ActionErrorMessage": null,
+                      "Condition": null,
+                      "ActionType": "InjectData",
+                      "OrderIndex": 0,
+                      "ActionParameters": [
+                        {
+                          "Id": 144,
+                          "Name": "Data",
+                          "Value": [
+                            {
+                              "value": "Error",
+                              "name": "Result"
+                            }
+                          ],
+                          "ParentParameterId": null,
+                          "IsExpression": false,
+                          "ActionId": 30,
+                          "OrderIndex": 0
+                        }
+                      ],
+                      "DiagramUID": "Activity_1c0500h"
+                    }
+                  ],
+                  "IsInvalid": false
+                }
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 28,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Gateway_1myt40t"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 1,
+  "CreatedOn": "2022-10-28T12:32:28.3953628+00:00",
+  "LastModifiedBy": 1,
+  "LastModifiedOn": "2022-10-28T12:32:35.7074099+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

@@ -1,0 +1,119 @@
+{
+  "Name": "enta",
+  "Description": "Returns the information of a enta record in JSON object format.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 37,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Input": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ReadEntity.ed6ae8d9-07b8-4ba5-8b33-210bdbb0ea66",
+      "OrderIndex": 0,
+      "Parameters": {
+        "RecordId": "[RecordId]",
+        "OutputToken": "Record"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "ed6ae8d9-07b8-4ba5-8b33-210bdbb0ea66",
+        "IsUidEnabled": "True"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[RecordId]"
+          },
+          {
+            "name": "name",
+            "value": "[Record:name]"
+          },
+          {
+            "name": "email",
+            "value": "[Record:email]"
+          },
+          {
+            "name": "date",
+            "value": "[Record:date]"
+          },
+          {
+            "name": "datetime",
+            "value": "[Record:datetime]"
+          },
+          {
+            "name": "boolean",
+            "value": "[Record:boolean]"
+          },
+          {
+            "name": "url",
+            "value": "[Record:url]"
+          },
+          {
+            "name": "noi",
+            "value": "[Record:noi]"
+          },
+          {
+            "name": "nod",
+            "value": "[Record:nod]"
+          },
+          {
+            "name": "time",
+            "value": "[Record:time]"
+          },
+          {
+            "name": "currency",
+            "value": "[Record:currency]"
+          },
+          {
+            "name": "doc",
+            "value": "[Record:doc]"
+          },
+          {
+            "name": "role",
+            "value": "[Record:role]"
+          },
+          {
+            "name": "user",
+            "value": "[Record:user]"
+          }
+        ],
+        "Headers": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
