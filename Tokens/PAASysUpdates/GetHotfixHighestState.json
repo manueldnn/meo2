@@ -1,0 +1,24 @@
+{
+  "id": 19,
+  "globalId": "dd3de7a4-d6ba-4de9-853b-fc3d9782a3cc",
+  "namespace": {
+    "id": 1,
+    "globalId": "e837dbb0-a4b7-4b90-ba34-0ea42715edc2",
+    "name": "PAASysUpdates",
+    "description": "",
+    "isSystem": true
+  },
+  "name": "GetHotfixHighestState",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "IF EXISTS (\r\n    SELECT TOP 1 [State] FROM dbo.PlantAnApp_Updates_SpecificUpdates \r\n    WHERE [State] = '<span class=\"badge bg-danger\">Critical</span>' AND Product = '[TknParams:ProductID]'\r\n)\r\nBEGIN\r\n\tSELECT '<span class=\"badge bg-danger\">Critical</span>'\r\nEND\r\nELSE IF EXISTS (\r\n    SELECT TOP 1 [State] FROM dbo.PlantAnApp_Updates_SpecificUpdates \r\n    WHERE [State] = '<span class=\"badge bg-success\">Recommended</span>' AND Product = '[TknParams:ProductID]'\r\n)\r\nBEGIN\r\n\tSELECT '<span class=\"badge bg-success\">Recommended</span>'\r\nEND\r\nELSE\r\nBEGIN\r\n\tSELECT [State] FROM dbo.PlantAnApp_Updates_Hotfixes WHERE Id = '[TknParams:HotfixID]'\r\nEND",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

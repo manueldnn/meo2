@@ -1,0 +1,69 @@
+{
+  "ApiId": "474e31ad64a92ddd5d9df0",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "latest",
+  "Triggers": [],
+  "Actions": [
+    {
+      "ActionType": "ExecuteActions",
+      "Description": "Untitled Action",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {
+        "ActionList": [
+          {
+            "uiIdentifier": "cbf174e4-b49d-4674-9e57-939cf8840974",
+            "ActionType": "ExecuteActions",
+            "Id": -1,
+            "OrderIndex": 0,
+            "Description": "Untitled Action",
+            "Condition": null,
+            "IsDeleted": false,
+            "isSelected": false,
+            "IsDisabled": false,
+            "Parameters": {
+              "ActionList": [
+                {
+                  "uiIdentifier": "43295e60-1775-4db0-8670-b557174cac5b",
+                  "ActionType": "ExecuteActions",
+                  "Id": -1,
+                  "OrderIndex": 0,
+                  "Description": "Untitled Action",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "isSelected": false,
+                  "IsDisabled": false,
+                  "Parameters": {
+                    "ActionList": [
+                      {
+                        "uiIdentifier": "54e3a434-0b0f-40b7-8e9a-72a81f70f106",
+                        "ActionType": "PlantAnApp.PartialUpdateEntity.c8c49bbd-a840-4380-b2d3-beca1a1dec95",
+                        "Id": -1,
+                        "OrderIndex": 0,
+                        "Description": "Untitled Action",
+                        "Condition": null,
+                        "IsDeleted": false,
+                        "isSelected": false,
+                        "IsDisabled": false,
+                        "Parameters": {
+                          "ConnectionString": "",
+                          "RecordId": "1",
+                          "UpdatedProperties": [],
+                          "OnError": []
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

@@ -1,0 +1,91 @@
+{
+  "ApiId": "7e40e7ac952d3115959095",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "email sync",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "Imap",
+      "Parameters": {
+        "StartDate": {
+          "Date": "2022-11-03T00:00:00Z",
+          "Time": "01:16:49 PM"
+        },
+        "IgnoreErrors": null,
+        "WatchFolder": {
+          "Value": null,
+          "IsExpression": false,
+          "Expression": null
+        },
+        "ProcessAllEmails": false,
+        "ProcessOnlyNewEmails": true,
+        "CompactText": null,
+        "SaveAttachments": null,
+        "AttachmentsSaveDirectory": {
+          "Value": null,
+          "IsExpression": false,
+          "Expression": null
+        },
+        "HandleDuplicate": {
+          "Value": null,
+          "IsExpression": false,
+          "Expression": null
+        },
+        "RenamePattern": null,
+        "FilterSubject": "test",
+        "FilterSubjectRegex": null,
+        "FilterTo": null,
+        "FilterToRegex": null,
+        "FilterFrom": null,
+        "FilterFromRegex": null,
+        "FilterCc": null,
+        "FilterCcRegex": null,
+        "FilterBcc": null,
+        "FilterBccRegex": null,
+        "FilterBody": null,
+        "FilterBodyRegex": null,
+        "FilterAttachments": {
+          "Value": null,
+          "IsExpression": false,
+          "Expression": null
+        },
+        "Credentials": {
+          "Group": "7",
+          "Entry": "89b003c7-ceb2-4d34-95ca-1c25995ecd77",
+          "IsExpression": false,
+          "Expression": "",
+          "Type": "ss.trigger.imap",
+          "EntireGroup": false
+        },
+        "FilterCustom": [],
+        "AdditionalHeaders": []
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "LogEvent",
+      "Description": "Untitled Action",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {
+        "EventType": {
+          "Value": "ADMIN_ALERT",
+          "IsExpression": false,
+          "Expression": null
+        },
+        "UserID": "3",
+        "LogProperties": [
+          {
+            "name": null,
+            "value": "[CredentialData:Hostname][CredentialData:Username][CredentialData:UseSSL][CredentialData:<Key>][Mail:From][Mail:FromName][Mail:To][Mail:ToNames][Mail:Cc][Mail:CcNames][Mail:Bcc][Mail:BccNames][Mail:Subject][Mail:DateSent][Mail:Body][Mail:BodyText][Mail:BodyHTML][Mail:HasAttachments][Mail:AttachmentsListJson][Mail:UploadedAttachmentsInfoJson][Mail:DisallowedAttachmentsJson]"
+          }
+        ]
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

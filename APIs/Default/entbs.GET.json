@@ -61,6 +61,23 @@
       "Metadata": {
         "PAP_InternalIdentifier": "Api.RawResponse"
       }
+    },
+    {
+      "ActionType": "RunSql",
+      "OrderIndex": 2,
+      "Parameters": {
+        "ConnectionString": "",
+        "QueryTimeout": "",
+        "SqlQuery": "",
+        "BindTokens": "",
+        "OutputTokenName": "",
+        "ExtractColumns": "",
+        "OnError": [],
+        "ShowErrors": false
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
     }
   ],
   "OnErrorActions": []

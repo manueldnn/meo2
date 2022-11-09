@@ -1,0 +1,63 @@
+{
+  "ApiId": "ec46b693c588c7f82644ee",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "drag job",
+  "Triggers": [],
+  "Actions": [
+    {
+      "ActionType": "ExecuteActions",
+      "Description": "Untitled Action",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {
+        "ActionList": [
+          {
+            "uiIdentifier": "ff3c4086-203e-4e51-ab65-f3e73f56beea",
+            "ActionType": "RunSql",
+            "Id": -1,
+            "OrderIndex": 0,
+            "Description": "Untitled Action",
+            "Condition": null,
+            "IsDeleted": false,
+            "isSelected": false,
+            "IsDisabled": false,
+            "Parameters": {
+              "ConnectionString": "",
+              "QueryTimeout": "",
+              "SqlQuery": "1",
+              "OutputTokenName": "",
+              "ShowErrors": "False",
+              "BindTokens": [],
+              "ExtractColumns": [],
+              "OnError": []
+            }
+          },
+          {
+            "uiIdentifier": "87810061-d5ea-4c02-9906-79fc72c6e2fe",
+            "ActionType": "LogEvent",
+            "Id": -1,
+            "OrderIndex": 0,
+            "Description": "Untitled Action",
+            "Condition": null,
+            "IsDeleted": false,
+            "isSelected": false,
+            "IsDisabled": false,
+            "Parameters": {
+              "EventType": {
+                "Value": null,
+                "IsExpression": false,
+                "Expression": null
+              },
+              "UserID": "",
+              "LogProperties": []
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

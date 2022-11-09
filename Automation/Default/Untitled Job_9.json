@@ -1,0 +1,159 @@
+{
+  "ApiId": "4b4ad691c0fdf176480207",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Untitled Job",
+  "Triggers": [],
+  "Actions": [
+    {
+      "ActionType": "ExecuteActions",
+      "Description": "Untitled Action",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {
+        "ActionList": [
+          {
+            "uiIdentifier": "4840e108-31e0-478c-8605-a73bf07dd2cd",
+            "ActionType": "ExecuteActions",
+            "Id": -1,
+            "OrderIndex": 0,
+            "Description": "Untitled Action",
+            "Condition": null,
+            "IsDeleted": false,
+            "isSelected": false,
+            "IsDisabled": false,
+            "Parameters": {
+              "ActionList": [
+                {
+                  "uiIdentifier": "5786e76f-83d9-4d27-8ca9-78f4af15cafe",
+                  "ActionType": "ExecuteActions",
+                  "Id": -1,
+                  "OrderIndex": 0,
+                  "Description": "Untitled Action",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "isSelected": false,
+                  "IsDisabled": false,
+                  "Parameters": {
+                    "ActionList": [
+                      {
+                        "uiIdentifier": "1af4f8a4-d3f9-4d00-a107-9353657554a0",
+                        "ActionType": "RunSql",
+                        "Id": -1,
+                        "OrderIndex": 0,
+                        "Description": "Untitled Action",
+                        "Condition": null,
+                        "IsDeleted": false,
+                        "isSelected": false,
+                        "IsDisabled": false,
+                        "Parameters": {
+                          "ConnectionString": "",
+                          "QueryTimeout": "",
+                          "SqlQuery": "1",
+                          "OutputTokenName": "",
+                          "ShowErrors": "False",
+                          "BindTokens": [],
+                          "ExtractColumns": [],
+                          "OnError": []
+                        }
+                      },
+                      {
+                        "uiIdentifier": "daa1a774-8cd1-4473-8d5c-46ea982702bc",
+                        "ActionType": "LogEvent",
+                        "Id": -1,
+                        "OrderIndex": 0,
+                        "Description": "Untitled Action",
+                        "Condition": null,
+                        "IsDeleted": false,
+                        "isSelected": false,
+                        "IsDisabled": false,
+                        "Parameters": {
+                          "EventType": {
+                            "Value": "ADMIN_ALERT",
+                            "IsExpression": false,
+                            "Expression": null
+                          },
+                          "UserID": "3",
+                          "LogProperties": [
+                            {
+                              "name": "few",
+                              "value": "few"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "uiIdentifier": "661fb211-dac4-432c-ab8f-b4970c1572fd",
+            "ActionType": "ExecuteActions",
+            "Id": -1,
+            "OrderIndex": 0,
+            "Description": "Untitled Action",
+            "Condition": null,
+            "IsDeleted": false,
+            "isSelected": false,
+            "IsDisabled": false,
+            "Parameters": {
+              "ActionList": [
+                {
+                  "uiIdentifier": "858d9e3b-c30d-41ac-8e80-c08eb8025d30",
+                  "ActionType": "RunSql",
+                  "Id": -1,
+                  "OrderIndex": 0,
+                  "Description": "Untitled Action",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "isSelected": false,
+                  "IsDisabled": false,
+                  "Parameters": {
+                    "ConnectionString": "",
+                    "QueryTimeout": "",
+                    "SqlQuery": "1",
+                    "OutputTokenName": "",
+                    "ShowErrors": "False",
+                    "BindTokens": [],
+                    "ExtractColumns": [],
+                    "OnError": []
+                  }
+                },
+                {
+                  "uiIdentifier": "18b9714d-7c7f-4cbd-84f3-d0dd33185e3e",
+                  "ActionType": "LogEvent",
+                  "Id": -1,
+                  "OrderIndex": 0,
+                  "Description": "Untitled Action",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "isSelected": false,
+                  "IsDisabled": false,
+                  "Parameters": {
+                    "EventType": {
+                      "Value": "ADMIN_ALERT",
+                      "IsExpression": false,
+                      "Expression": null
+                    },
+                    "UserID": "3",
+                    "LogProperties": [
+                      {
+                        "name": "few",
+                        "value": "few"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

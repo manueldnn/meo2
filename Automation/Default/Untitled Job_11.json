@@ -1,0 +1,111 @@
+{
+  "ApiId": "a240588e4dd999bac39acd",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Untitled Job",
+  "Triggers": [],
+  "Actions": [
+    {
+      "ActionType": "ExecuteActions",
+      "Description": "Untitled Action",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {
+        "ActionList": [
+          {
+            "uiIdentifier": "dd033330-6d38-4edb-aade-7c001d9ead90",
+            "ActionType": "ExecuteActions",
+            "Id": -1,
+            "OrderIndex": 1,
+            "Description": "cloneAction",
+            "Condition": null,
+            "IsDeleted": false,
+            "isSelected": false,
+            "IsDisabled": false,
+            "Parameters": {
+              "ActionList": [
+                {
+                  "uiIdentifier": "ae761439-1a11-4164-a7f6-7bf108fa217d",
+                  "ActionType": "ExecuteActions",
+                  "Id": -1,
+                  "OrderIndex": 2,
+                  "Description": "Untitled Action",
+                  "Condition": null,
+                  "IsDeleted": false,
+                  "isSelected": false,
+                  "IsDisabled": false,
+                  "Parameters": {
+                    "ActionList": [
+                      {
+                        "uiIdentifier": "f83b8c23-e5c3-4fa8-852a-7cf62bdf93f0",
+                        "ActionType": "PlantAnApp.PartialUpdateEntity.8425e9c7-4899-4556-b392-cc5aa7091c80",
+                        "Id": -1,
+                        "OrderIndex": 0,
+                        "Description": "Untitled Action",
+                        "Condition": null,
+                        "IsDeleted": false,
+                        "isSelected": false,
+                        "IsDisabled": false,
+                        "Parameters": {
+                          "ConnectionString": "",
+                          "RecordId": "1",
+                          "UpdatedProperties": [],
+                          "OnError": [
+                            {
+                              "uiIdentifier": "1cfbe198-f7e6-4185-a34c-841564d3fdfe",
+                              "ActionType": "RunSql",
+                              "Id": -1,
+                              "OrderIndex": 3,
+                              "Description": "q",
+                              "Condition": null,
+                              "IsDeleted": false,
+                              "isSelected": false,
+                              "IsDisabled": false,
+                              "Parameters": {
+                                "ConnectionString": "",
+                                "QueryTimeout": "",
+                                "SqlQuery": "q",
+                                "OutputTokenName": "",
+                                "ShowErrors": "False",
+                                "BindTokens": [],
+                                "ExtractColumns": [],
+                                "OnError": []
+                              }
+                            },
+                            {
+                              "uiIdentifier": "ed1d2b97-bdf3-48ec-965a-038e2278f07e",
+                              "ActionType": "LogEvent",
+                              "Id": -1,
+                              "OrderIndex": 4,
+                              "Description": "Untitled Action",
+                              "Condition": null,
+                              "IsDeleted": false,
+                              "isSelected": false,
+                              "IsDisabled": false,
+                              "Parameters": {
+                                "EventType": {
+                                  "Value": null,
+                                  "IsExpression": false,
+                                  "Expression": null
+                                },
+                                "UserID": "",
+                                "LogProperties": []
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

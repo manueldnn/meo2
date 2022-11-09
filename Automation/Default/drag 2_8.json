@@ -1,0 +1,62 @@
+{
+  "ApiId": "7943fcb2f5196b3249c466",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "drag 2",
+  "Triggers": [],
+  "Actions": [
+    {
+      "ActionType": "ExecuteActions",
+      "Description": "Untitled Action",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {
+        "ActionList": [
+          {
+            "uiIdentifier": "246c8033-321e-466a-8d9d-e0741bc2b50f",
+            "ActionType": "SendMail",
+            "Id": -1,
+            "OrderIndex": 0,
+            "Description": "Untitled Action",
+            "Condition": null,
+            "IsDeleted": false,
+            "isSelected": false,
+            "IsDisabled": false,
+            "Parameters": {
+              "From": "",
+              "To": "1",
+              "DetermineEmail": "",
+              "ToAllUsers": "",
+              "ReplyTo": "",
+              "Cc": "",
+              "Bcc": "",
+              "Subject": "",
+              "Format": {
+                "Value": "Html",
+                "IsExpression": false,
+                "Expression": null
+              },
+              "Body": "",
+              "PortalFiles": "",
+              "FileToken1": "",
+              "Credentials": {
+                "Group": null,
+                "Entry": {
+                  "Value": "",
+                  "IsExpression": false,
+                  "Expression": ""
+                },
+                "Type": "smtp",
+                "EntireGroup": false
+              },
+              "Headers": []
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
