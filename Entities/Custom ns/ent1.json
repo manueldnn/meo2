@@ -5,14 +5,14 @@
       "GlobalId": "b939330e-58ef-4bc4-b072-bb7cf8e1a5fe",
       "EntityVersionId": 3,
       "RelationName": "docs",
-      "OrderIndex": 5
+      "OrderIndex": 4
     },
     {
       "Id": 5,
       "GlobalId": "704becd0-4007-4af9-8f66-3c487878db6a",
       "EntityVersionId": 9,
       "RelationName": "list of tickets",
-      "OrderIndex": 7
+      "OrderIndex": 6
     }
   ],
   "DisplayInMenu": true,
@@ -71,30 +71,6 @@
       "OrderIndex": 2
     },
     {
-      "Id": 27,
-      "GlobalId": "d02c0781-dd68-4c48-9779-c2a0dcfc6850",
-      "EntityVersionId": 10,
-      "Name": "date",
-      "Type": {
-        "Id": "Date",
-        "Name": "Date",
-        "InputType": {
-          "Id": "Date",
-          "Name": "Date",
-          "ValueType": 3,
-          "Length": 3,
-          "Icon": "calendar_today"
-        }
-      },
-      "EntityVersionRefId": null,
-      "IsDeleted": false,
-      "IsRequired": false,
-      "IsSearchable": false,
-      "IsFilterable": false,
-      "IsSortable": true,
-      "OrderIndex": 3
-    },
-    {
       "Id": 28,
       "GlobalId": "f58d4442-5c81-48ef-b9c4-b9f8d5cd9e04",
       "EntityVersionId": 10,
@@ -116,7 +92,7 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 4
+      "OrderIndex": 3
     },
     {
       "Id": 29,
@@ -140,7 +116,55 @@
       "IsSearchable": false,
       "IsFilterable": false,
       "IsSortable": false,
-      "OrderIndex": 6
+      "OrderIndex": 5
+    },
+    {
+      "Id": 30,
+      "GlobalId": "fac3f439-35c4-4cd0-a986-3d4d7f99be52",
+      "EntityVersionId": 10,
+      "Name": "boolean",
+      "Type": {
+        "Id": "Boolean",
+        "Name": "Boolean",
+        "InputType": {
+          "Id": "Boolean",
+          "Name": "Boolean",
+          "ValueType": 0,
+          "Length": 1,
+          "Icon": "check_circle_outline"
+        }
+      },
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 7
+    },
+    {
+      "Id": 55,
+      "GlobalId": "e06e8115-88ff-46d6-a5c2-922a5508e2f4",
+      "EntityVersionId": 10,
+      "Name": "few",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": false,
+      "IsSearchable": false,
+      "IsFilterable": false,
+      "IsSortable": false,
+      "OrderIndex": 8
     }
   ],
   "RolePermissions": {
@@ -377,8 +401,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2022-10-26T10:26:55.9733333",
   "CreatedBy": "SuperUser Account",
-  "LastModifiedBy": "",
-  "LastModifiedOn": null,
+  "LastModifiedBy": "admin admin",
+  "LastModifiedOn": "2022-11-09T13:59:16.7",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

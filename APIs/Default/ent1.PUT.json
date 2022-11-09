@@ -103,6 +103,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "few",
+      "IsDeleted": false,
+      "IsEnabled": false,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -115,7 +124,8 @@
         "email": "[email]",
         "boolean": "[boolean]",
         "doc": "[doc]",
-        "refoftickets": "[refoftickets]"
+        "refoftickets": "[refoftickets]",
+        "few": "[few]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",

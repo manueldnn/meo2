@@ -56,6 +56,10 @@
             "value": "[RecordId]"
           },
           {
+            "name": "few",
+            "value": "[Record:few]"
+          },
+          {
             "name": "name",
             "value": "[Record:name]"
           },
