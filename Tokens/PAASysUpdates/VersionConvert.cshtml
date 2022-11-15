@@ -1,7 +1,6 @@
 @inherits avt.MyTokens.Core.ParsingEngine.RazorTemplate
 @{
     string versionStr = "0.0.0";
-
     if(TknParams.Version != null) {
         var inputStr = TknParams.Version.ToString();
         versionStr = string.IsNullOrEmpty(inputStr) ? versionStr : inputStr;
