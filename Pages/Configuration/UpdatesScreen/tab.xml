@@ -1,0 +1,121 @@
+<tab>
+    <content>Updates</content>
+    <contentKey />
+    <containersrc />
+    <cultureCode />
+    <description />
+    <disabled>false</disabled>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <issecure>false</issecure>
+    <visible>false</visible>
+    <issystem>false</issystem>
+    <keywords />
+    <pageheadtext>
+		&lt;style&gt;
+
+		tr.table-row {
+		height: 40px;
+		}
+
+		@keyframes pulse {
+		50%{transform: scale(1.5);}
+		50%{transform:scale(2);}
+		}
+		#ABloader {
+		z-index: 2000;
+		border-radius: 50%;
+		position: fixed;
+		margin: auto auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 250px;
+		height: 250px;
+		animation: pulse 1.5s infinite;
+		}
+
+		.backdropLoader {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: white;
+		opacity: 1;
+		z-index: 1999;
+		}
+
+		.hideLoader {
+		display: none;
+		}
+		&lt;/style&gt;
+
+		&lt;div class="backdropLoader hideLoader"&gt;
+		&lt;div id="ABloader"&gt;
+		&lt;img src="https://www.plantanapp.com/Portals/0/adam/Site%20Logo/UwXHpEQfKE2k53_aEm0OsA/Image/plant-an-app-logo.svg" alt="PAAlogo" width="250" height="250"&gt;
+		&lt;/div&gt;
+		&lt;/div&gt;
+	</pageheadtext>
+    <permanentredirect>false</permanentredirect>
+    <refreshinterval>-1</refreshinterval>
+    <sitemappriority>0.5</sitemappriority>
+    <skinsrc>[G]skins/pagebuilder/admin screen.ascx</skinsrc>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <name>UpdatesScreen</name>
+    <title>Updates</title>
+    <url type="Normal" />
+    <tabpermissions>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Low-Code Engineer</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Admins</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Citizen Developers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </tabpermissions>
+    <tabsettings>
+        <tabsetting>
+            <settingname>FaIcon</settingname>
+            <settingvalue>fas fa-history</settingvalue>
+        </tabsetting>
+        <tabsetting>
+            <settingname>AllowIndex</settingname>
+            <settingvalue>True</settingvalue>
+        </tabsetting>
+        <tabsetting>
+            <settingname>LinkNewWindow</settingname>
+            <settingvalue>False</settingvalue>
+        </tabsetting>
+    </tabsettings>
+    <tabUrls />
+</tab>
