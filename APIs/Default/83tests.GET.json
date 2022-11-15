@@ -1,0 +1,67 @@
+{
+  "Name": "83tests",
+  "Description": "Returns the information of all 83test records in JSON object format.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 53,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Input": [
+    {
+      "Name": "RowLimit",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "number",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RowLimit is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ReadAllEntity.33d66f26-970c-40e2-9543-78bce207b78e",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "83tests",
+        "RowLimit": "[RowLimit]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadAllEntityRecords",
+        "EntityIdentifier": "33d66f26-970c-40e2-9543-78bce207b78e",
+        "IsUidEnabled": "True"
+      }
+    },
+    {
+      "ActionType": "RawResponse",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Content": "{\"83tests\" : [83tests:json]}",
+        "Headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.RawResponse"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

@@ -1,0 +1,119 @@
+{
+  "Name": "83test",
+  "Description": "Creates a new record of type 83test",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 51,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Input": [
+    {
+      "Name": "name",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"name is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "email",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "date",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.33d66f26-970c-40e2-9543-78bce207b78e",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "name": "[name]",
+        "email": "[email]",
+        "date": "[date]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "33d66f26-970c-40e2-9543-78bce207b78e",
+        "IsUidEnabled": "True"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.33d66f26-970c-40e2-9543-78bce207b78e",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "33d66f26-970c-40e2-9543-78bce207b78e",
+        "IsUidEnabled": "True"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "name",
+            "value": "[CreatedRecord:name]"
+          },
+          {
+            "name": "email",
+            "value": "[CreatedRecord:email]"
+          },
+          {
+            "name": "date",
+            "value": "[CreatedRecord:date]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://release-123meo2.apps.plantanapp.com/api/83test?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
