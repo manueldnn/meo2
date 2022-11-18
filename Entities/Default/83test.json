@@ -5,7 +5,7 @@
   "DisplayAfter": null,
   "RecordNamePropertyId": 56,
   "UpdateRecordNameProperty": null,
-  "ShowDashboardModule": false,
+  "ShowDashboardModule": true,
   "Properties": [
     {
       "Id": 56,
@@ -260,8 +260,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2022-11-15T14:28:56.23",
   "CreatedBy": "admin admin",
-  "LastModifiedBy": "",
-  "LastModifiedOn": null,
+  "LastModifiedBy": "admin admin",
+  "LastModifiedOn": "2022-11-18T08:32:38.3333333",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,
